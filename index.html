@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAND REAL ESTATE - Premier Properties & AI Investment Insights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.15.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="preloader"><div class="spinner"></div></div>
+
+    <!-- Sale Countdown Timer -->
+    <div id="sale-countdown-timer" role="button" tabindex="0">
+        <p class="countdown-title">Dholera Limited Offer Ends In:</p>
+        <div class="countdown-blocks">
+            <div class="block"><span id="days">00</span><small>Days</small></div>
+            <div class="block"><span id="hours">00</span><small>Hours</small></div>
+            <div class="block"><span id="minutes">00</span><small>Mins</small></div>
+            <div class="block"><span id="seconds">00</span><small>Secs</small></div>
+        </div>
+    </div>
+
+    <header class="main-header"><div class="header-content"><button id="menu-toggle" aria-label="Open Menu"><i class="fas fa-bars"></i></button><div class="logo-name">ANAND REAL ESTATE</div><button id="theme-toggle" title="Toggle dark/light mode"><i class="fas fa-moon"></i></button></div></header>
+    
+    <div id="overlay-menu">
+        <button id="close-menu" aria-label="Go Home and Close Menu"><i class="fas fa-home"></i></button>
+        <h3 class="menu-heading">Our Current and Future Projects</h3>
+        <nav>
+            <ul>
+                <li>
+                    <span class="menu-category">Haryana</span>
+                    <ul>
+                        <li><a href="#" class="nav-link" data-region="hisar">Hisar</a></li>
+                        <li>
+                            <span class="menu-subcategory">NCR</span>
+                            <ul>
+                                <li><a href="#" class="nav-link" data-region="gurugram">Gurugram</a></li>
+                                <li><a href="#" class="nav-link" data-region="bahadurgarh">Bahadurgarh</a></li>
+                                <li><a href="#" class="nav-link" data-region="faridabad">Faridabad</a></li>
+                                <li><a href="#" class="nav-link" data-region="kharkhoda">Kharkhoda</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="menu-category">Gujarat</span>
+                    <ul>
+                        <li><a href="#" class="nav-link" data-region="dholera">Dholera SIR</a></li>
+                        <li><a href="#" class="nav-link" data-region="gandhinagar">Gandhinagar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="hero"><div class="hero-content"><h1 class="hero-title" data-aos="ios-fade-up">ANAND REAL ESTATE</h1><p class="hero-subtitle" data-aos="ios-fade-up" data-aos-delay="100">Building India's Future, One Property at a Time</p><a href="#properties-display" class="cta-button" data-aos="ios-fade-up" data-aos-delay="200">Explore Our Regions <i class="fas fa-arrow-right"></i></a></div></section>
+    
+    <main>
+        <section id="properties-display" class="container">
+            <div id="home-content" class="property-region">
+                <h2 data-aos="ios-fade-up">Welcome to Anand Real Estate</h2>
+                <p class="region-intro" data-aos="ios-fade-up" data-aos-delay="100">With years of dedicated experience, we are your trusted partners in navigating India's most promising real estate markets. Our mission is to guide you through every step with integrity, helping you make strategic investments that build a prosperous future.</p>
+                <div class="services-section" data-aos="ios-fade-up" data-aos-delay="200">
+                    <h3>Our Core Services</h3>
+                    <div class="services-grid"><div class="service-card"><i class="fas fa-home"></i><h4>Residential Sales</h4><p>Find the perfect home for your family in India's best localities.</p></div><div class="service-card"><i class="fas fa-building"></i><h4>Commercial Properties</h4><p>Get the ideal space for your business to grow and succeed.</p></div><div class="service-card"><i class="fas fa-handshake"></i><h4>Investment Consultation</h4><p>Expert advice on high-growth property investment and market trends.</p></div></div>
+                </div>
+                <div class="home-articles-section" data-aos="ios-fade-up" data-aos-delay="300">
+                    <h3>Explore Our Premier Locations</h3>
+                    <div id="region-articles-container" class="region-articles-grid">
+                        <!-- Articles will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="hisar-content" class="property-region"><div class="content-wrapper" data-aos="ios-fade-up"><h2>Hisar: The Nation's Emerging Aerotropolis</h2><p class="region-intro">As our home base, Hisar represents a perfectly balanced investment: a stable, livable city with the explosive, future-oriented growth of a national logistics hub.</p><div class="article"><h3>The Epicenter of Haryana's Growth</h3><p>Hisar is rapidly evolving from a regional hub into a city of national importance. The cornerstone of this evolution is the <strong>Maharaja Agrasen International Airport</strong>. This is not merely an airport; it is the nucleus of a burgeoning <strong>Aerotropolis</strong>—an airport-centric commercial hub that will redefine the economic landscape of Northern India.</p><p>The project encompasses an integrated manufacturing cluster, a major MRO (Maintenance, Repair, and Overhaul) facility, and a world-class air cargo terminal. This massive infrastructural investment acts as a powerful magnet for multinational corporations, logistics firms, and ancillary industries, all seeking a strategic base of operations. The ripple effect on land and property valuation is inevitable and has already begun.</p><p>Beyond the airport, Hisar’s established foundation as a center for education and healthcare, with renowned universities and medical facilities, provides unmatched stability. This unique combination of a stable, livable city with explosive, future-oriented growth makes it a perfectly balanced investment. We guide our clients to acquire prime residential plots, high-visibility commercial spaces, and strategically located agricultural lands that are best positioned to capitalize on this once-in-a-generation boom.</p></div><div class="ai-analysis-section"><button class="ai-analysis-button" data-region="hisar"><i class="fas fa-brain"></i> Generate AI Investment Analysis</button><div class="ai-analysis-result"></div></div></div></div>
+            
+            <div id="gurugram-content" class="property-region"><div class="content-wrapper" data-aos="ios-fade-up"><h2>Gurugram: The Millennium City</h2><p class="region-intro">Gurugram is a global brand and the benchmark for corporate success in India. An investment here is a legacy asset in the nation's most dynamic urban landscape.</p><div class="article"><h3>Special Focus: A Legacy of Prestige</h3><p>Gurugram is more than a city; it is a global brand. As the chosen headquarters for over 250 Fortune 500 companies, it boasts a concentration of corporate power unmatched in the nation. Its skyline, dotted with architectural marvels, is a testament to its relentless pursuit of excellence. An investment in Gurugram is an investment in a legacy of proven growth and prestige.</p><p>Our specialization lies in two of Gurugram's most coveted corridors. The first is the iconic <strong>Golf Course Road and Golf Course Extension Road</strong>, a region synonymous with ultra-luxury. Here, we connect our clients with exclusive high-rise residences offering panoramic views and world-class amenities. The second is the rapidly appreciating <strong>Dwarka Expressway (NPR)</strong> corridor. This newly operational expressway is a game-changer, providing seamless connectivity to Delhi's international airport and unlocking immense value for both commercial and residential properties along its stretch.</p><p>We understand that a Gurugram property is a trophy asset. It is about securing a premier address, generating high rental yields from a robust corporate tenant base, and owning a piece of India's most dynamic urban landscape. Our deep market intelligence provides our clients with a distinct advantage in acquiring these premium properties.</p></div><div class="ai-analysis-section"><button class="ai-analysis-button" data-region="gurugram"><i class="fas fa-brain"></i> Generate AI Investment Analysis</button><div class="ai-analysis-result"></div></div></div></div>
+
+            <div id="bahadurgarh-content" class="property-region"><div class="content-wrapper" data-aos="ios-fade-up"><h2>Bahadurgarh: The Industrial Gateway</h2><p class="region-intro">Strategically located on the western border of Delhi, Bahadurgarh's direct Metro and highway connectivity makes it a prime location for industry and affordable housing.</p<div class="article"><h3>Special Focus: The Strategic Industrial Powerhouse</h3><p>Strategically located on the western border of Delhi, Bahadurgarh is rapidly emerging as the industrial and logistical gateway to the capital. Its direct connectivity via the Green Line Metro and major national highways makes it a prime location for manufacturing, warehousing, and affordable housing. With the development of the UER II and the KMP Expressway, its logistical advantages have multiplied, attracting significant industrial investment. We focus on prime industrial plots within the HSIIDC sectors and high-potential residential plots in approved colonies, offering incredible value for forward-thinking investors.</p></div><div class="ai-analysis-section"><button class="ai-analysis-button" data-region="bahadurgarh"><i class="fas fa-brain"></i> Generate AI Investment Analysis</button><div class="ai-analysis-result"></div></div></div></div>
+
+            <div id="faridabad-content" class="property-region"><div class="content-wrapper" data-aos="ios-fade-up"><h2>Faridabad: The Resurgent Urban Hub</h2><p class="region-intro">Fueled by enhanced metro connectivity and its inclusion in the Smart Cities Mission, Faridabad is undergoing a massive resurgence, offering a unique mix of affordability and modern amenities.</p<div class="article"><h3>Special Focus: A Story of Urban Renewal</h3><p>Faridabad, once a stalwart industrial town, is undergoing a massive resurgence. Fueled by enhanced metro connectivity and its inclusion in the Smart Cities Mission, the city is witnessing a complete overhaul of its infrastructure. The development of new commercial hubs, modern residential sectors in Greater Faridabad (Neharpar), and its proximity to the upcoming Jewar International Airport are creating a new real estate boom. Faridabad offers a unique combination of affordability and modern amenities, making it a hotspot for first-time homebuyers and long-term investors looking to capitalize on the city's next wave of growth.</p></div><div class="ai-analysis-section"><button class="ai-analysis-button" data-region="faridabad"><i class="fas fa-brain"></i> Generate AI Investment Analysis</button><div class="ai-analysis-result"></div></div></div></div>
+
+            <div id="kharkhoda-content" class="property-region"><div class="content-wrapper" data-aos="ios-fade-up"><h2>Kharkhoda: The Automotive Future</h2><p class="region-intro">The new Maruti Suzuki plant makes Kharkhoda one of the most significant industrial investments in North India, destined to create a powerful economic ecosystem.</p<div class="article"><h3>Special Focus: The Maruti Suzuki Revolution</h3><p>Kharkhoda in Sonipat is the site of one of the most significant industrial investments in North India's recent history: the new state-of-the-art Maruti Suzuki manufacturing plant. This mega-project is a powerful economic catalyst, destined to create an entire ecosystem of ancillary industries, component manufacturers, and a massive residential demand for its workforce. Investing in Kharkhoda today is akin to investing in Gurugram three decades ago. We specialize in identifying and securing government-approved residential and commercial plots in the immediate vicinity of this project, offering our clients a ground-floor opportunity in India's next great automotive hub.</p></div><div class="ai-analysis-section"><button class="ai-analysis-button" data-region="kharkhoda"><i class="fas fa-brain"></i> Generate AI Investment Analysis</button><div class="ai-analysis-result"></div></div></div></div>
+            
+            <div id="dholera-content" class="property-region">
+                <div class="content-wrapper" data-aos="ios-fade-up">
+                    <h2>Dholera SIR: India's First Greenfield Smart City</h2>
+                    <p class="region-intro">Welcome to the future of urban living. Dholera SIR is being meticulously crafted from the ground up to become a global hub for manufacturing, logistics, and innovation.</p>
+                    
+                    <div class="article">
+                        <h3>A Vision of Tomorrow, Today</h3>
+                        <p>Dholera is a cornerstone of the Delhi-Mumbai Industrial Corridor (DMIC), designed with cutting-edge technology, sustainability, and world-class standards. It features futuristic "plug and play" infrastructure, where all utilities are pre-laid underground, one of the world's largest solar parks, and has a Platinum Green Building Certification. This master-planned city is set to redefine urban development in India.</p>
+                        <p>With a new International Airport, a high-speed metro link to Ahmedabad, and strategic port connectivity, Dholera is an unparalleled investment destination. Its economic zones are attracting global businesses, promising exponential growth in property value and rental demand, making it a prime opportunity for visionary investors.</p>
+                    </div>
+
+                    <!-- Featured Project Section -->
+                    <section class="featured-project-section" id="serenity-estate">
+                        <div class="featured-project-header">
+                            <h3>Featured Project in Dholera</h3>
+                            <h2>Serenity Estate: The Ultimate Living Experience</h2>
+                            <p>A luxury township by Ceremony Homes & The Province Group, where nature meets smart living.</p>
+                        </div>
+
+                        <div class="article serenity-article">
+                            <h3>Where Nature Meets Luxury</h3>
+                            <p>Amidst this futuristic city, our residential project is designed to provide families with a lifestyle that blends nature, wellness, and modern living. Surrounded by lush green landscapes, eco-friendly spaces, and wellness-focused amenities, it offers an environment where health and happiness take center stage.</p>
+                            <p><strong>At Serenity Estate, every detail is meticulously planned to ensure the most premium quality and luxury.</strong> We are committed to delivering a world-class living experience, offering you a secure, transparent, and ultimately rewarding investment. With our legacy of trust, you can be confident that you are not just buying a plot, but securing a prosperous future for your family, worry-free.</p>
+                        </div>
+    
+                        <div class="lifestyle-section">
+                             <h3>A Township Designed for Every Lifestyle</h3>
+                             <p>At the very heart of Serenity Estates unfolds a visionary lifestyle ecosystem—an exceptional fusion of advanced smart infrastructure, rejuvenating wellness spaces, and a thriving community designed to inspire vibrant living.</p>
+                             <div class="lifestyle-grid">
+                                <div class="lifestyle-card"><i class="fas fa-building"></i><h4>Corporate Housing</h4></div>
+                                <div class="lifestyle-card"><i class="fas fa-home"></i><h4>Luxury Residential Plots</h4></div>
+                                <div class="lifestyle-card"><i class="fas fa-glass-cheers"></i><h4>Resort Destination Wedding Venue</h4></div>
+                                <div class="lifestyle-card"><i class="fas fa-store"></i><h4>Commercial Spaces</h4></div>
+                                <div class="lifestyle-card"><i class="fas fa-spa"></i><h4>Wellness Retreat Clubhouse</h4></div>
+                                <div class="lifestyle-card"><i class="fas fa-map-marked-alt"></i><h4>Experiential Tourism Zone</h4></div>
+                             </div>
+                        </div>
+    
+                        <div class="amenities-section">
+                            <h3>Infrastructure & Amenities</h3>
+                            <ul class="amenities-list">
+                                <li><i class="fas fa-road"></i> 10m, 15m & 18m internal roads</li>
+                                <li><i class="fas fa-lightbulb"></i> Smart Lights: EV Charging, Solar Lights, Public Wi-Fi</li>
+                                <li><i class="fas fa-dumbbell"></i> Clubhouse: Gym, Mini-Theatre, Co-working, Pool</li>
+                                <li><i class="fas fa-seedling"></i> Wellness: Spa, Meditation, Yoga, Organic Farming</li>
+                                <li><i class="fas fa-water"></i> Artificial Lake + Green Spine Development</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sustainability-section">
+                             <h3>Sustainability & Safety</h3>
+                             <ul class="amenities-list">
+                                <li><i class="fas fa-recycle"></i> Rainwater Harvesting & Greywater Recycling</li>
+                                <li><i class="fas fa-solar-panel"></i> Solar Energy for Common Infrastructure</li>
+                                <li><i class="fas fa-fire-extinguisher"></i> Fire Safety Systems & Hydrants</li>
+                                <li><i class="fas fa-shield-alt"></i> Emergency Access & Utility Planning</li>
+                             </ul>
+                        </div>
+    
+                        <div class="target-audience-section">
+                            <h3>An Opportunity for Every Visionary Investor</h3>
+                            <ul class="amenities-list">
+                                <li><i class="fas fa-user-tie"></i> <strong>Corporate Employees:</strong> Lifestyle & Walk-to-Work</li>
+                                <li><i class="fas fa-city"></i> <strong>Delhi NCR Investors:</strong> High growth plotted township</li>
+                                <li><i class="fas fa-users"></i> <strong>Ahmedabad & Bhavnagar Families:</strong> Weekend Homes</li>
+                                <li><i class="fas fa-chart-line"></i> <strong>Commercial Investors:</strong> Rental-Driven Spaces</li>
+                                <li><i class="fas fa-globe-asia"></i> <strong>NRIs:</strong> Long-Term Legacy Ownership</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="media-gallery-container" data-aos="ios-fade-up" data-aos-delay="100">
+                            <h3 class="gallery-title">Visualizing the Future</h3>
+                            <div class="media-gallery">
+                                <div class="gallery-item" data-type="image" data-src="dholera_featured.jpg"><img src="dholera_featured.jpg" alt="Featured view of Dholera SIR"></div>
+                                <div class="gallery-item" data-type="video" data-src="dholera_1.mp4"><video loop muted playsinline src="dholera_1.mp4"></video><div class="play-icon"><i class="fas fa-play"></i></div></div>
+                                <div class="gallery-item" data-type="video" data-src="dholera_2.mp4"><video loop muted playsinline src="dholera_2.mp4"></video><div class="play-icon"><i class="fas fa-play"></i></div></div>
+                                <div class="gallery-item" data-type="video" data-src="dholera_3.mp4"><video loop muted playsinline src="dholera_3.mp4"></video><div class="play-icon"><i class="fas fa-play"></i></div></div>
+                                <div class="gallery-item" data-type="video" data-src="dholera_4.mp4"><video loop muted playsinline src="dholera_4.mp4"></video><div class="play-icon"><i class="fas fa-play"></i></div></div>
+                                <div class="gallery-item" data-type="video" data-src="dholera_5.mp4"><video loop muted playsinline src="dholera_5.mp4"></video><div class="play-icon"><i class="fas fa-play"></i></div></div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <div class="ai-analysis-section"><button class="ai-analysis-button" data-region="dholera"><i class="fas fa-brain"></i> Generate AI Investment Analysis</button><div class="ai-analysis-result"></div></div>
+                </div>
+            </div>
+
+            <div id="gandhinagar-content" class="property-region"><div class="content-wrapper" data-aos="ios-fade-up"><h2>Gandhinagar: The Green Capital</h2><p class="region-intro">As one of India's best-planned cities, Gandhinagar offers a unique blend of serene living, robust infrastructure, and proximity to Gujarat's economic heart, Ahmedabad.</p<div class="article"><h3>Special Focus: A Hub of Governance and Growth</h3><p>Gandhinagar is not just the administrative capital of Gujarat; it is a city renowned for its quality of life, expansive green spaces, and organized sectors. Its strategic location within the Ahmedabad-Gandhinagar twin city region makes it a prime area for residential and commercial investment. The development of GIFT City (Gujarat International Finance Tec-City) nearby has further supercharged its real estate potential, attracting a high-value talent pool seeking premium living spaces.</p><p>We specialize in identifying high-appreciation plots and properties in well-developed sectors, offering investors a secure and stable asset in a city known for its systematic growth and a high standard of living. An investment in Gandhinagar is an investment in a clean, green, and economically vibrant future.</p></div><div class="ai-analysis-section"><button class="ai-analysis-button" data-region="gandhinagar"><i class="fas fa-brain"></i> Generate AI Investment Analysis</button><div class="ai-analysis-result"></div></div></div></div>
+        </section>
+        
+        <section id="map-section" class="container" data-aos="ios-fade-up"><h2 id="map-title">Visit Our Office in Hisar</h2><p id="office-address" class="office-address">SCO 14, Model Town, Near Dev Petrol Pump, Jindal Chowk, Hisar-125001</p><div class="map-container"><iframe id="region-map-iframe" src="https://maps.google.com/maps?q=29.134121171431214,75.74738478406043&hl=en&z=17&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></section>
+        <section id="contact" class="container" data-aos="ios-fade-up"><h2>Connect With Us</h2><p>Ready to discuss your investment in India's future? Contact us today.</p><div class="contact-buttons"><a href="tel:+919355822222" class="contact-button"><i class="fas fa-phone"></i> Call us at +91 93558 22222</a><a href="https://wa.me/919034000003" target="_blank" class="contact-button"><i class="fab fa-whatsapp"></i> WhatsApp at +91 90340 00003</a></div></section>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>© 2024 ANAND REAL ESTATE. All Rights Reserved.</p>
+                <p class="footer-pride">Proudly Indian | Made with ❤️ in India</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- AI Chatbot Elements -->
+    <div id="chatbot-container">
+        <button id="chatbot-toggle" aria-label="Open investment assistant chat">
+            <i class="fas fa-comments"></i>
+            <i class="fas fa-times"></i>
+        </button>
+        <div id="chatbot-window" role="dialog" aria-modal="true" aria-hidden="true">
+            <div class="chatbot-header">
+                <h3>AI Investment Assistant</h3>
+                <p>Powered by Gemini</p>
+            </div>
+            <div id="chatbot-messages" role="log" aria-live="polite">
+                <div class="message message-ai">
+                    <p>Hello! I'm your AI Investment Assistant. How can I help you explore properties in Haryana and Gujarat today?</p>
+                </div>
+            </div>
+            <form id="chatbot-form" action="#">
+                <input id="chatbot-input" type="text" placeholder="Ask about investment potential..." autocomplete="off">
+                <button type="submit" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Lightbox -->
+    <div id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close media viewer">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous image/video">&#10094;</button>
+        <button class="lightbox-next" aria-label="Next image/video">&#10095;</button>
+        <div class="lightbox-content"></div>
+    </div>
+
+    <!-- Dholera Promotion Popup -->
+    <div id="dholera-popup-overlay">
+        <div id="dholera-popup" role="alertdialog" aria-labelledby="popup-title" aria-describedby="popup-desc">
+            <button id="close-popup" aria-label="Close promotion">&times;</button>
+            <div class="popup-header">
+                <p>Exclusive Pre-Launch Offer</p>
+                <h2 id="popup-title">Serenity Estate, Dholera</h2>
+            </div>
+            <p id="popup-desc">Invest in India's first Greenfield Smart City. For a limited time, get 10% OFF at a special rate of <strong>₹6500/sq.yd.</strong> (from <del>₹7000/sq.yd.</del>).</p>
+            <p class="deadline-text">This special offer is for a limited time only!</p>
+            <p class="popup-contact-info">Call <a href="tel:+919355822222">+91 93558 22222</a> for details.</p>
+            <a href="#" id="popup-learn-more" class="cta-button">Enquire Now</a>
+        </div>
+    </div>
+    
+    <!-- Theme Change Confirmation -->
+    <div id="theme-confirmation-popup" aria-live="polite" aria-atomic="true">
+        <div id="theme-confirmation-text"></div>
+    </div>
+    
+    <a href="#" class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script type="module" src="index.tsx"></script>
+</body>
+</html>
